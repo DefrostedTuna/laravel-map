@@ -1,0 +1,379 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700|Lato:400,700,300);
+:root {
+  font-size: 16px;
+  font-size: calc( 12px + ( 21 - 12 ) * ( (100vw - 500px) / ( 1600 - 500 ) )); }
+  @media screen and (max-width: 500px) {
+    :root {
+      font-size: 12px; } }
+  @media screen and (min-width: 1600px) {
+    :root {
+      font-size: 21px; } }
+
+body {
+  margin: auto;
+  color: #444444;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+          font-feature-settings: "kern", "liga", "pnum";
+  font-size: 1rem;
+  line-height: 1.5; }
+
+p {
+  margin: 0 0 1.5em; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #444444;
+  line-height: 1;
+  margin: 0.5em 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 3.157rem; }
+
+h2 {
+  font-size: 2.369rem; }
+
+h3 {
+  font-size: 1.777rem; }
+
+h4 {
+  font-size: 1.333rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 1rem; }
+
+small {
+  font-size: 0.75rem; }
+
+a {
+  color: #3498DB;
+  text-decoration: none;
+  -webkit-transition: color 150ms ease;
+  transition: color 150ms ease; }
+  a:active, a:focus, a:hover {
+    color: #2772a4; }
+
+hr {
+  border-bottom: 2px solid #DDDDDD;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+iframe {
+  max-width: 100%; }
+
+.iframe-wrap {
+  margin-bottom: 1.5em; }
+
+blockquote {
+  margin: 0.75em;
+  padding-left: 1.0em;
+  border-left: 0.375em solid #3498DB; }
+
+table {
+  border-collapse: collapse;
+  -webkit-font-feature-settings: "kern", "liga", "tnum";
+          font-feature-settings: "kern", "liga", "tnum";
+  margin: .75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: .75em 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #DDDDDD;
+  padding: .75em 0; }
+
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0 0 1.5em;
+  padding: 0; }
+
+dl {
+  margin-bottom: .75em; }
+  dl dt {
+    font-weight: bold;
+    margin-top: .75em; }
+  dl dd {
+    margin: 0; }
+
+fieldset {
+  background-color: #f7f7f7;
+  border: 1px solid #b9b9b9;
+  margin: 1.5em 0;
+  padding: 1.0em; }
+
+label {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif; }
+  label:hover {
+    cursor: pointer; }
+
+label,
+input {
+  display: block; }
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple=multiple] {
+  font-size: 0.75em;
+  font-family: inherit;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.06);
+  padding: 1.0em;
+  margin-bottom: 1.5em;
+  width: 100%;
+  -webkit-transition: border ease .3s;
+  transition: border ease .3s;
+  box-sizing: border-box; }
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+  select[multiple=multiple]:hover {
+    border: 1px solid #3498DB; }
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+  select[multiple=multiple]:focus {
+    border: 1px solid #2ECC71;
+    box-shadow: 0px 0px 2px #239a55;
+    outline: none; }
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical; }
+
+input[type=checkbox],
+input[type=radio] {
+  display: inline-block; }
+  input[type=checkbox]:hover,
+  input[type=radio]:hover {
+    cursor: pointer; }
+
+input[type=range],
+input[type=color],
+input[type=file] {
+  cursor: pointer; }
+
+input[type=color] {
+  font-size: 1em;
+  height: 2em;
+  width: 100%;
+  padding: 0.25em; }
+
+select {
+  font-size: 0.75em;
+  line-height: 1.5; }
+
+.ut-block-text {
+  margin: 0 auto 1.5em;
+  max-width: 45rem; }
+
+.ut-left {
+  float: left; }
+
+.ut-right {
+  float: right; }
+
+.ut-text-left {
+  text-align: left; }
+
+.ut-text-right {
+  text-align: right; }
+
+.ut-text-center {
+  text-align: center; }
+
+.ut-hide {
+  display: none; }
+
+.ut-inline {
+  display: inline; }
+
+.ut-block {
+  display: block; }
+
+.ut-inline-block {
+  display: inline-block; }
+
+/**
+*	Thanks to the guys who made Buttonplate for this.
+*	Stripped it down to include in this project more fluently.
+**/
+.ut-modal-blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); }
+
+.ut-modal-no-scroll {
+  overflow: hidden; }
+
+.ut-modal-show {
+  display: block !important; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.weather_widget {
+  display: none;
+  width: 800px;
+  height: 335px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: absolute;
+  left: 5em;
+  bottom: 5em;
+  z-index: 2; }
+  .weather_widget .left_side_wrap {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 320px;
+    height: 100%; }
+    .weather_widget .left_side_wrap .left_side_content {
+      position: relative;
+      width: 100%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .weather_widget .left_side_wrap .left_side_content #big_icon {
+        width: 120px;
+        margin-bottom: -20px; }
+      .weather_widget .left_side_wrap .left_side_content .temp {
+        font-size: 80px;
+        font-weight: bold;
+        margin-left: 10px;
+        padding-left: 15px;
+        border-left: 2px solid black; }
+      .weather_widget .left_side_wrap .left_side_content .summary {
+        display: block;
+        font-weight: bold;
+        font-size: 1.5em; }
+  .weather_widget .right_side {
+    position: absolute;
+    left: 320px;
+    top: 0;
+    width: 480px;
+    height: 100%; }
+    .weather_widget .right_side .day {
+      width: 100%;
+      height: 50px;
+      position: relative;
+      margin: 5px 0; }
+    .weather_widget .right_side .icon_wrap {
+      display: inline-block; }
+      .weather_widget .right_side .icon_wrap .DI {
+        width: 50px; }
+    .weather_widget .right_side .time_wrap {
+      display: inline-block;
+      width: 75px; }
+      .weather_widget .right_side .time_wrap .time {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        margin-left: 5px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        font-weight: bold; }
+    .weather_widget .right_side .graph_wrap::before {
+      position: absolute;
+      content: '';
+      width: 94%;
+      left: 3px;
+      top: 9px;
+      height: 2px;
+      z-index: -1;
+      background: -webkit-linear-gradient(left, #5eb9ff 0%, #ed0303 100%);
+      background: linear-gradient(to right, #5eb9ff 0%, #ed0303 100%); }
+    .weather_widget .right_side .graph_wrap {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      margin-left: 40px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 250px;
+      height: 20px; }
+      .weather_widget .right_side .graph_wrap .graph {
+        display: inline-block;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        height: 50%;
+        border-radius: 15px; }
+      .weather_widget .right_side .graph_wrap .t_temp_low {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: -40px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        font-weight: bold; }
+      .weather_widget .right_side .graph_wrap .t_temp_high {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: -40px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        font-weight: bold; }
+
+.clock_widget {
+  display: none;
+  position: absolute;
+  bottom: 21rem;
+  left: 5rem;
+  z-index: 2;
+  font-size: 2em;
+  width: 800px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.19), 0 0px 6px rgba(0, 0, 0, 0.23);
+  padding: 5px 5px;
+  font-weight: bold; }
+  .clock_widget .date_string {
+    float: left;
+    margin-left: 10px; }
+  .clock_widget .clock_string {
+    float: right;
+    margin-right: 10px; }
+
+#map {
+  height: 100%;
+  width: 100%;
+  z-index: 1; }
