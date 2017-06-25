@@ -1,6 +1,6 @@
 $(function() {
 
-    var domainPrefix = '/map';
+    var domainPrefix = '/laravel-map';
 
     var skycons = new Skycons({"color": "black"});
 
